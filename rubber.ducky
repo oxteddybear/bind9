@@ -1,0 +1,77 @@
+$TTL    604800
+@       IN      SOA     ns1.rubber.ducky. admin.rubber.ducky. (
+                  3       ; Serial
+             604800     ; Refresh
+              86400     ; Retry
+            2419200     ; Expire
+             604800 )   ; Negative Cache TTL
+;
+; name servers - NS records
+     IN      NS      ns1.rubber.ducky.
+
+;192.168.254.0/24 - A records
+
+ns1	      	IN      A       192.168.254.123
+avitest		IN      A       192.168.254.124
+
+vcsa3           IN      A       192.168.254.133
+vcsa6           IN      A       192.168.254.136
+vcsa137         IN      A       192.168.254.137
+
+kms		IN      A       192.168.219.10
+vcsa134         IN      A       192.168.219.134
+esx106		IN      A       192.168.219.106
+esx107		IN      A       192.168.219.107
+esx108		IN      A       192.168.219.108
+esx110		IN      A       192.168.219.110
+esx111		IN      A       192.168.219.111
+esx112		IN      A       192.168.219.112
+esx113		IN      A       192.168.219.113
+esx114		IN      A       192.168.219.114
+esx115		IN      A       192.168.219.115
+esx116		IN      A       192.168.219.116
+esx117		IN      A       192.168.219.117
+esx118		IN      A       192.168.219.118
+esx119		IN      A       192.168.219.119
+
+
+
+vcd1		IN	A	192.168.254.141
+vcd2		IN	A	192.168.254.142
+vcd3		IN	A	192.168.254.143
+vcd4		IN	A	192.168.254.144
+avi1		IN	A	192.168.254.151
+avi2		IN	A	192.168.254.152
+avi3		IN	A	192.168.254.153
+avivip		IN	A	192.168.254.154
+
+0nsxtmgr	IN      A       192.168.254.61
+0nsxtmgr1	IN      A       192.168.254.61
+0rnsxtmgr1	IN      A       192.168.254.61
+0nsxtmgr2	IN      A       192.168.254.62
+0rnsxtmgr2	IN      A       192.168.254.62
+0nsxtmgr3	IN      A       192.168.254.63
+0rnsxtmgr3	IN      A       192.168.254.63
+
+ducky4          IN      A       192.168.254.104
+ducky7          IN      A       192.168.254.107
+ducky8		IN	A	192.168.254.108
+ducky9		IN	A	192.168.254.109
+			
+nsxmgr1		IN      A       192.168.5.1
+nsxmgr2		IN      A       192.168.5.2
+nsxmgr3		IN      A       192.168.5.3
+nsxmgrvip	IN      A       192.168.5.4
+edge1		IN      A       192.168.5.11
+edge2		IN      A       192.168.5.12
+
+nsxvmgr01	IN      A       192.168.8.41
+
+file201		IN      A       192.168.219.201
+file202		IN      A       192.168.219.202
+file203		IN      A       192.168.219.203
+edgenode-01a	IN      A       192.168.219.19
+edgenode-02a	IN      A       192.168.219.20
+
+
+

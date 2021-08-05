@@ -1,0 +1,22 @@
+$TTL    604800
+
+@       IN      SOA     dns.rubber.ducky. admin.rubber.ducky (
+                              9         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+; name servers
+      IN      NS      ns1.rubber.ducky.
+
+
+; PTR Records (in the first column use the missing octet eg. 10.1.1.2/16
+; would look like this "2.1 IN PTR dns1.rubber.ducky"
+1	IN	PTR	nsxmgr1.rubber.ducky
+2	IN	PTR	nsxmgr2.rubber.ducky
+3	IN	PTR	nsxmgr3.rubber.ducky
+4	IN	PTR	nsxmgrvip.rubber.ducky
+11	IN	PTR	edge1.rubber.ducky
+12	IN	PTR	edge2.rubber.ducky
+
+

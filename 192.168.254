@@ -1,0 +1,36 @@
+$TTL    604800
+
+@       IN      SOA     ns1.rubber.ducky. admin.rubber.ducky (
+                              3         ; Serial
+                         604800         ; Refresh
+                          86400         ; Retry
+                        2419200         ; Expire
+                         604800 )       ; Negative Cache TTL
+; name servers
+      IN      NS      ns1.rubber.ducky.
+
+
+; PTR Records (in the first column use the missing octet eg. 10.1.1.2/16
+; would look like this "2.1 IN PTR ns11.rubber.ducky"
+; remove the trailing dot at the end for ubuntu
+123     IN      PTR     ns1.rubber.ducky               ;this is required on top
+124     IN      PTR     avitest.rubber.ducky               ;this is required on top
+
+133     IN      PTR     vcsa3.rubber.ducky
+136     IN      PTR     vcsa6.rubber.ducky
+137     IN      PTR     vcsa137.rubber.ducky
+
+141	IN	PTR	vcd1.rubber.ducky
+142	IN	PTR	vcd2.rubber.ducky
+143	IN	PTR	vcd3.rubber.ducky
+144	IN	PTR	vcd4.rubber.ducky
+151	IN	PTR	avi1.rubber.ducky
+152	IN	PTR	avi2.rubber.ducky
+153	IN	PTR	avi3.rubber.ducky
+154	IN	PTR	avivip.rubber.ducky
+
+104     IN      PTR     ducky4.rubber.ducky
+107     IN      PTR     ducky7.rubber.ducky
+108	IN	PTR	ducky8.rubber.ducky
+61	IN	PTR	0nsxtmgr.rubber.ducky
+

@@ -1,0 +1,15 @@
+//
+// Do any local configuration here
+//
+
+// Consider adding the 1918 zones here, if they are not used in your
+// organization
+//include "/etc/bind/zones.rfc1918";
+
+zone "rubber.ducky" 		{ type master; file "/etc/bind/rubber.ducky"; };
+zone "254.168.192.in-addr.arpa" { type master; file "/etc/bind/192.168.254";  };
+zone "219.168.192.in-addr.arpa" { type master; file "/etc/bind/192.168.219";  };
+zone "8.168.192.in-addr.arpa"   { type master; file "/etc/bind/192.168.8";    };
+zone "5.168.192.in-addr.arpa" 	{ type master; file "/etc/bind/192.168.5";    };
+zone "50.168.192.in-addr.arpa"	{ type master; file "/etc/bind/192.168.50";   };
+
